@@ -1,9 +1,11 @@
+@use "../abstracts/variables";
+
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
 h2 {
-  color: $green-dark;
+  color: variables.$green-dark;
   font-size: 40px;
 }
 

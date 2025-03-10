@@ -1,3 +1,6 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
@@ -7,7 +10,7 @@
  */
 html {
   box-sizing: border-box;
-  color: $black;
+  color: variables.$black;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
   scroll-behavior: smooth;
@@ -37,7 +40,7 @@ body {
 a {
   text-decoration: none;
 
-  @include on-event {
+  @include mixins.on-event {
     text-decoration: underline;
   }
 }

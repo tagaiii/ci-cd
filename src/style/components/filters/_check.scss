@@ -1,5 +1,8 @@
+@use "../../abstracts/mixins";
+@use "../../abstracts/variables";
+
 .check {
-  @include flexbox(space-between);
+  @include mixins.flexbox(space-between);
   position: relative;
   padding-left: 35px;
   margin-top: 10px;
@@ -20,22 +23,22 @@
     height: 16px;
     width: 16px;
     border-radius: 3px;
-    border: 1px solid $grey-light;
+    border: 1px solid variables.$grey-light;
     transition: 0.5s;
   }
 
   &__found {
     font-size: 0.8em;
-    color: $grey-medium;
+    color: variables.$grey-medium;
     vertical-align: baseline;
   }
 }
 
 .check:hover .check__input ~ .check__span {
-  background-color: $green-extra-light;
+  background-color: variables.$green-extra-light;
 }
 
 .check__input:checked ~ .check__span {
-  background-color: $green-medium;
+  background-color: variables.$green-medium;
   border: none;
 }

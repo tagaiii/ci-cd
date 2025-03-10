@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .cart-page {
   margin-top: 25px;
   position: relative;
@@ -109,7 +111,7 @@
 }
 
 .full-cart-page__pagination-text {
-  color: $grey-medium;
+  color: variables.$grey-medium;
 }
 
 .amount-number {
@@ -148,9 +150,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $grey-medium;
+  color: variables.$grey-medium;
   border-radius: 100%;
-  border: .5px $grey-medium solid;
+  border: .5px variables.$grey-medium solid;
 }
 
 .full-cart-page__panel {
@@ -171,7 +173,7 @@
 
 .full-cart-page__promo {
   width: 100%;
-  background-color: $green-extra-light-opacity;
+  background-color: variables.$green-extra-light-opacity;
   margin-bottom: 3px;
   border-radius: 7px;
   display: flex;
@@ -189,7 +191,7 @@
   text-transform: uppercase;
 
   &::placeholder {
-    color: $grey-medium;
+    color: variables.$grey-medium;
   }
 }
 
@@ -202,7 +204,7 @@
 
 .full-cart-page__info {
   width: 100%;
-  background-color: $green-extra-light-opacity;
+  background-color: variables.$green-extra-light-opacity;
   margin-bottom: 10px;
   border-radius: 7px;
   padding: 1px 20px;
@@ -221,11 +223,11 @@
 .discounts__item { 
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px $grey-medium dotted;
+  border-bottom: 1px variables.$grey-medium dotted;
 }
 
 .discounts__item {
-  color: $green-dark;
+  color: variables.$green-dark;
   margin-left: 20px;
   margin-top: 16px;
   font-size: 14px;
@@ -260,5 +262,5 @@
   justify-content: space-between;
   font-size: 24px;
   font-weight: bold;
-  border-bottom: 1px $black solid;
+  border-bottom: 1px variables.$black solid;
 }

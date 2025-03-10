@@ -1,3 +1,5 @@
+@use "variables";
+
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
@@ -47,8 +49,8 @@
   height: 32px;
   font-size: 14px;
   line-height: 1;
-  background-color: $green-medium;
-  color: $white-medium;
+  background-color: variables.$green-medium;
+  color: variables.$white-medium;
 
   @media (max-width: 600px) {
     width: 25px;

@@ -1,47 +1,40 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import
-  'style/abstracts/variables',
-  'style/abstracts/functions',
-  'style/abstracts/mixins';
+@use 'style/abstracts/variables';
+@use 'style/abstracts/functions';
+@use 'style/abstracts/mixins';
 
 // 2. Vendors
-@import
-  'style/vendors/normalize';
+@use 'style/vendors/normalize';
 
 // 3. Base stuff
-@import
-  'style/base/base',
-  'style/base/fonts',
-  'style/base/typography',
-  'style/base/helpers';
+@use 'style/base/base';
+@use 'style/base/fonts';
+@use 'style/base/typography';
+@use 'style/base/helpers';
 
 // 4. Layout-related sections
-@import
-  'style/layout/header',
-  'style/layout/main',
-  'style/layout/promo',
-  'style/layout/body',
-  'style/layout/purchase-modal',
-  'style/layout/footer';
+@use 'style/layout/header';
+@use 'style/layout/main';
+@use 'style/layout/promo';
+@use 'style/layout/body';
+@use 'style/layout/purchase-modal';
+@use 'style/layout/footer';
 
 // 5. Components
-@import
-  'style/components/button',
-  'style/components/product-card',
-  'style/components/sort-parameters',
-  'style/components/filters/range',
-  'style/components/filters/check';
+@use 'style/components/button';
+@use 'style/components/product-card';
+@use 'style/components/sort-parameters';
+@use 'style/components/filters/range';
+@use 'style/components/filters/check';
 
 // 6. Page-specific styles
-@import
-  'style/pages/home',
-  'style/pages/cart-page',
-  'style/pages/error-page',
-  'style/pages/product-page',
-  'style/pages/catalog';
+@use 'style/pages/home';
+@use 'style/pages/cart-page';
+@use 'style/pages/error-page';
+@use 'style/pages/product-page';
+@use 'style/pages/catalog';
 
 // 7. Themes
-@import
-  'style/themes/default';
+@use 'style/themes/default';

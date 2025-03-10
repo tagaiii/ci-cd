@@ -60,19 +60,16 @@ module.exports = {
         exclude: ['/node_modules/', '/dist/'],
       },
       {
-        test: /\.(c|sa|sc)ss$/i,
+        test: /\.scss$/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
           {
-            loader: 'postcss-loader',
+            loader: 'sass-loader',
             options: {
-              postcssOptions: {
-                plugins: [require('postcss-preset-env')],
-              },
+              implementation: require('sass'),
             },
           },
-          'sass-loader',
         ],
       },
       {

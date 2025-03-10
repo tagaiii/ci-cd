@@ -1,5 +1,8 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .catalog {
-  @include flexbox(_, flex-start);
+  @include mixins.flexbox(_, flex-start);
   gap: 40px;
   margin: 40px 0;
 
@@ -30,7 +33,7 @@
     transition: .3s;
 
     &_active {
-      background-color: $green-extra-light-opacity;
+      background-color: variables.$green-extra-light-opacity;
       backdrop-filter: blur(3px);
       visibility: visible;
     }
@@ -49,7 +52,7 @@
 
   &__title {
     margin-top: 0;
-    color: $green-medium;
+    color: variables.$green-medium;
   }
 
   &__sale{
@@ -58,7 +61,7 @@
 
   &__button-wrapper{
     width: 100%;
-    @include flexbox(space-between);
+    @include mixins.flexbox(space-between);
     gap: 5px;
   }
 
@@ -66,10 +69,10 @@
     position: fixed;
     left: 20px;
     top: 20px;
-    background-color: $white-medium;
+    background-color: variables.$white-medium;
     border: 30px solid transparent;
     padding-right: 20px;
-    box-shadow: $shadow;
+    box-shadow: variables.$shadow;
     z-index: 160;
     border-radius: 20px;
     transform: translateX(-150%);
@@ -91,13 +94,13 @@
 }
 
 .products {
-  @include flexbox();
+  @include mixins.flexbox();
   flex-direction: column;
   flex: 1 1 auto;
   gap: 30px;
 
   &__parameters {
-    @include flexbox();
+    @include mixins.flexbox();
     width: 100%;
     gap: 20px;
 
@@ -109,7 +112,7 @@
   }
 
   &__sort-parameters {
-    @include flexbox(space-between);
+    @include mixins.flexbox(space-between);
     gap: 5px;
     flex: 1 1 auto;
     min-height: 28px;
@@ -123,7 +126,7 @@
   }
 
   &__container {
-    @include flexbox(flex-start, flex-start);
+    @include mixins.flexbox(flex-start, flex-start);
     width: 100%;
     flex-wrap: wrap;
     gap: 30px;

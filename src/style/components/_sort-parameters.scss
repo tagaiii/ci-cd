@@ -1,10 +1,13 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .sort {
-  @include flexbox(space-between);
+  @include mixins.flexbox(space-between);
   flex-wrap: wrap;
   gap: 5px;
 
   &__item {
-    @include flexbox();
+    @include mixins.flexbox();
     margin-right: 10px;
 
     @media (max-width: 600px) {
@@ -33,13 +36,13 @@
 }
 
 .found-products {
-  @include flexbox();
+  @include mixins.flexbox();
   column-gap: 5px;
   flex-wrap: wrap;
 
   &__num {
     font-size: 1.3em;
-    color: $green-medium;
+    color: variables.$green-medium;
     font-weight: bold;
   }
 }
@@ -47,18 +50,18 @@
 .sort-input {
   height: 28px;
   width: 200px;
-  border: solid 1px $grey-medium;
+  border: solid 1px variables.$grey-medium;
   border-radius: 14px;
   outline: none;
   background: url('assets/svg/search.svg') 95% center no-repeat;
   background-size: 15px;
   padding: 0 10px;
   line-height: 1;
-  color: $green-medium;
+  color: variables.$green-medium;
   font-weight: 500;
 
   &::placeholder {
-    color: $grey-medium;
+    color: variables.$grey-medium;
     font-weight: 400;
   }
 
@@ -68,14 +71,14 @@
 }
 
 .layout {
-  @include flexbox();
+  @include mixins.flexbox();
   gap: 5px;
 
   &__portrait,
   &__landscape {
     width: 28px;
     height: 28px;
-    border: solid 1px $grey-medium;
+    border: solid 1px variables.$grey-medium;
     border-radius: 5px;
     background: url('assets/svg/portrait.svg') center center no-repeat;
     background-size: 20px;
