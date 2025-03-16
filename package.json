@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npx webpack serve --mode development --open",
-    "build": "npx webpack",
-    "deploy": "npm run build && npx gh-pages -d dist -m deploy",
+    "build-prod": "npx webpack --node-env=production",
+    "build-dev": "npx webpack",
+    "deploy": "npm run build-prod && npx gh-pages -d dist -m deploy",
     "clear": "rd /s /q dist",
     "lint-fix": "npx eslint --ext js,jsx,ts,tsx ./src --fix",
     "test": "jest --config jest.config.js"
