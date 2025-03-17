@@ -43,6 +43,7 @@ module.exports = {
       patterns: [
         { from: 'src/assets', to: 'assets' },
         { from: 'src/data/plants', to: 'assets/img/plants' },
+        { from: path.resolve(__dirname, '_redirects'), to: '' },
       ],
     }),
 

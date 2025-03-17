@@ -4,13 +4,12 @@
   "description": "online-store",
   "main": "index.js",
   "scripts": {
-    "start": "npx webpack serve --mode development --open",
-    "build-prod": "npx webpack --node-env=production",
-    "build-dev": "npx webpack",
-    "deploy": "npm run build-prod && npx gh-pages -d dist -m deploy",
-    "clear": "rd /s /q dist",
-    "lint-fix": "npx eslint --ext js,jsx,ts,tsx ./src --fix",
-    "test": "jest --config jest.config.js"
+  "dev": "webpack serve --mode development --open",
+  "build": "rimraf dist && webpack --mode production",
+  "clear": "rimraf dist",
+  "lint": "eslint ./src --ext js,jsx,ts,tsx",
+  "lint:fix": "eslint ./src --ext js,jsx,ts,tsx --fix",
+  "test": "jest --config jest.config.js"
   },
   "repository": {
     "type": "git",
@@ -38,7 +37,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-webpack-plugin": "^3.2.0",
-    "gh-pages": "^4.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
