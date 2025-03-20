@@ -65,12 +65,13 @@ class Cart {
   }
 
   public add(id: string) {
-    const plant = plants.products.filter((value) => value.id === Number(id))[0];
-    if (!plant) return;
-    if (plant.stock > this.basket[id] || !this.basket[id]) {
-      this.basket[id] ? (this.basket[id] += 1) : (this.basket[id] = 1);
-    }
+    // const plant = plants.products.filter((value) => value.id === Number(id))[0];
+    // if (!plant) return;
+    // if (plant.stock > this.basket[id] || !this.basket[id]) {
+    //   this.basket[id] ? (this.basket[id] += 1) : (this.basket[id] = 1);
+    // }
     // this.saveCart();
+    return id;
   }
 
   public delete(id: string) {
