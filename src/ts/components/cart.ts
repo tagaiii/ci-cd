@@ -70,7 +70,7 @@ class Cart {
     if (plant.stock > this.basket[id] || !this.basket[id]) {
       this.basket[id] ? (this.basket[id] += 1) : (this.basket[id] = 1);
     }
-    this.saveCart();
+    // this.saveCart();
   }
 
   public delete(id: string) {
