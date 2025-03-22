@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/catalog/:path*",
+      "source": "/catalog(.*)",
       "destination": "/",
       "permanent": false
     }
