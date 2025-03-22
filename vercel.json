@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/catalog",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
+}
