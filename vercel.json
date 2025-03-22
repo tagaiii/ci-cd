@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/catalog*",
+      "source": "/catalog(.*)",
       "destination": "/index.html",
       "permanent": false
     },
