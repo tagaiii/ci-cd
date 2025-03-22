@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/catalog*",
+      "destination": "/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html",
+      "permanent": false
+    }
+  ]
+}
