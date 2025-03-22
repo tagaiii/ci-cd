@@ -2,12 +2,12 @@
   "redirects": [
     {
       "source": "/catalog(.*)",
-      "destination": "/index.html",
+      "destination": "/",
       "permanent": false
     },
     {
       "source": "/:path*",
-      "destination": "/index.html",
+      "destination": "/",
       "permanent": false
     }
   ]
