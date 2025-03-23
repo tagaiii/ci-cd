@@ -6,6 +6,16 @@ on:
       - feature/*
 
 jobs:
+  check-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check branch name
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          if [[ ! "$BRANCH_NAME" =~ ^feature/ ]]; then
+            echo "Error: branch name must have prefix 'feature/'"
+            exit 1
+          fi
   lint:
     runs-on: ubuntu-latest
     steps:
