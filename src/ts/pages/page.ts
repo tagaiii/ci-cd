@@ -12,7 +12,7 @@ class Page {
   }
   protected fillPage(page: DocumentFragment, id?: string) {
     console.log('Load page:', id);
-    return page;
+    // return page;
   }
 
   protected makePage(id?: string) {
