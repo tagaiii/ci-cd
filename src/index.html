@@ -42,7 +42,7 @@
         <div class="container">
           <img class="promo__photo" src="assets/img/eucalypt.png" alt="eucalypt" />
           <div class="promo__container">
-            <h3 class="promo__title">Get <span>10% OFF</span> on your purchase</h3>
+            <h2 class="promo__title">Get <span>10% OFF</span> on your purchase</h2>
             <div class="promo__descr">Use promo codes:</div>
             <div class="promo__code"><span>PLANTS10</span> <span>SALE10</span> <span>FORYOU10</span></div>
             <div class="promo__sum">Discounts are summed up.</div>
@@ -98,7 +98,7 @@
       <section id="catalog" class="catalog page">
         <div class="filter">
           <div class="filter__type">
-            <h3 class="filter__title">Category</h3>
+            <h2 class="filter__title">Category</h2>
             <ul id="check-type" class="filter__list">
               <li class="check">
                 <label class="check__label"
@@ -192,30 +192,30 @@
           </div>
 
           <div class="filter__price">
-            <h3 id="filter-title" class="filter__title">Price</h3>
+            <h3 id="filter-price" class="filter__title">Price</h3>
             <div class="range">
               <div class="range__value">
-                <label for="input-min">min</label>
+                <label for="input-price-min">min</label>
                 <input
                   type="number"
-                  id="input-min"
+                  id="input-price-min"
                   class="input-min"
                   value="1"
                   max="100"
-                  aria-labelledby="filter-title"
+                  aria-labelledby="filter-price"
                 />
                 <span>$</span>
 
                 <div class="range__separator" aria-hidden="true">-</div>
 
-                <label for="input-max">max</label>
+                <label for="input-price-max">max</label>
                 <input
                   type="number"
-                  id="input-max"
+                  id="input-price-max"
                   class="input-max"
                   value="100"
                   max="100"
-                  aria-labelledby="filter-title"
+                  aria-labelledby="filter-price"
                 />
                 <span>$</span>
               </div>
@@ -227,24 +227,22 @@
               <div class="range__range-input">
                 <input
                   type="range"
-                  id="range-min"
                   class="range-min"
                   min="1"
                   max="100"
                   step="1"
                   value="1"
-                  aria-labelledby="filter-title"
+                  aria-labelledby="filter-price"
                 />
 
                 <input
                   type="range"
-                  id="range-max"
                   class="range-max"
                   min="1"
                   max="100"
                   value="100"
                   step="1"
-                  aria-labelledby="filter-title"
+                  aria-labelledby="filter-price"
                 />
               </div>
             </div>
@@ -260,21 +258,54 @@
           </div>
 
           <div class="filter__stock">
-            <h3 class="filter__title">Stock</h3>
+            <h3 id="filter-stock" class="filter__title">Stock</h3>
             <div class="range">
               <div class="range__value">
-                <span>min</span>
-                <input type="number" class="input-min" value="1" max="65" />
-                <div class="range__separator">-</div>
-                <span>max</span>
-                <input type="number" class="input-max" value="65" max="65" />
+                <label for="input-stock-min">min</label>
+                <input
+                  type="number"
+                  id="input-stock-min"
+                  class="input-min"
+                  value="1"
+                  max="65"
+                  aria-labelledby="filter-stock"
+                />
+
+                <div class="range__separator" aria-hidden="true">-</div>
+
+                <label for="input-stock-max">max</label>
+                <input
+                  type="number"
+                  id="input-stock-max"
+                  class="input-max"
+                  value="65"
+                  max="65"
+                  aria-labelledby="filter-stock"
+                />
               </div>
               <div class="range__slider slider">
                 <div class="slider__progress"></div>
               </div>
               <div class="range__range-input">
-                <input type="range" class="range-min" min="1" max="69" value="1" step="1" />
-                <input type="range" class="range-max" min="1" max="65" value="65" step="1" />
+                <input
+                  type="range"
+                  class="range-min"
+                  min="1"
+                  max="65"
+                  step="1"
+                  value="1"
+                  aria-labelledby="filter-stock"
+                />
+
+                <input
+                  type="range"
+                  class="range-max"
+                  min="1"
+                  max="65"
+                  value="65"
+                  step="1"
+                  aria-labelledby="filter-stock"
+                />
               </div>
             </div>
           </div>
